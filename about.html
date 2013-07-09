@@ -5,12 +5,12 @@
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<meta charset="UTF-8">
-	<title>PHP Test</title>
+	<title>AIS_Rom - About</title>
 	<script>
 		 $(document).ready(function() {
 		 	$( "#accordion" ).accordion({		 		
 		 		collapsible: true,
-		 		active: 3,
+		 		active: 0,
 		 		heightStyle: "content" , 
 		 		icons: { "header": "default-icon slide-icon", "activeHeader": "selected-icon slide-icon" }
 		 	});
@@ -20,7 +20,9 @@
 </head>
 <body>
 <div id="content">
-	<div id="header-about"></div>
+	<div id="header-about"><h1>เกี่ยวกับเรา</h1>
+		<p>AIS มุ่งมั่นและพร้อมให้บริการ 3G แก่ลูกค้าภายใต้แนวคิด ”AIS 3G 2100 ตัวจริงมาตรฐานโลก”</p>
+	</div>
 	<div id="accordion">
 <h3><a href="#">เงื่อนไขและข้อกำหนด (Term & Conditions)</a></h3>
 <div>
@@ -181,7 +183,7 @@
 			<span class="button-number button-box"><strong>#</strong></span>
 			<span class="button-box button-call" style=""><strong>call</strong></span>	
     	</div>
-    	<div class="quickguide-right" style="">
+    	<div class="quickguide-right">
     		<div style="width:221px;height:88px;border-right: 1px solid #f6f6f6;float: left;">
 				<span style="color:#99c501;font-size: 18pt;font-weight: normal;line-height: 48px;padding-left: 15px;">กดเช็คยอดคงเหลือ</span><br>
 				<span class="button-multiple button-box" style="margin-left:15px;"><strong>*</strong></span>
@@ -234,22 +236,32 @@
 		<div class="amount-topup">800</div>
 		<div class="amount-topup">1000</div>
 		<div class="amount-topup">1500</div>
-		<div class="amount-topup"></div>
-		<div class="amount-topup"></div>
+		<div class="amount-topup">&nbsp;</div>
+		<div class="amount-topup">&nbsp;</div>
 	</div>
 	<div style="clear:both;"></div>
 </div>
 <h3><a href="#">โอนเงินเข้ากระเป๋าขายผ่านตู้เอทีเอ็ม 7 ธนาคาร</a></h3>
-<div>
-	<p>
-		<strong>jQuery</strong> is a cross-browser JavaScript library designed to simplify the client-side scripting of HTML. It was released in January 2006 at BarCamp NYC by John Resig. Used by over 55% of the 10,000 most visited websites, jQuery is the most popular JavaScript library in use today.
-	</p>
+<div id="atm" style="width:679px;background-color: #8DC63F;">
+<img src="css/images/atm.png" alt="pat-by-atm">
 </div>
 <h3><a href="#">โอนเงินเข้ากระเป๋าขายผ่านเครื่อง CDM ธนาคารไทยพาณิชย์</a></h3>
-<div>
-	<p>
-		<strong>jQuery</strong> is a cross-browser JavaScript library designed to simplify the client-side scripting of HTML. It was released in January 2006 at BarCamp NYC by John Resig. Used by over 55% of the 10,000 most visited websites, jQuery is the most popular JavaScript library in use today.
-	</p>
+<div id="cdm">
+	<div id="cdm-head">โอนเงินเข้ากระเป๋าขายผ่านเครื่อง<span>CDM</span><p>ง่ายๆ เพียงทำตามขั้นตอนต่อไปนี้</p></div>
+	<ul>
+		<li>กดปุ่มเริ่มทำรายการด้านขวามือ</li>
+		<li>เลือก <span style="width:143px;background: url('css/images/btn-cdm-pay.gif')"> "ชำระสินค้า และบริการ"</span></li>
+		<li>ต้องการชำระสินค้าและบริการด้วยบาร์โค้ดหรือไม่ เลือก <span style="width:93px;background: url('css/images/btn-cdm-no.gif')">"ไม่ต้องการ"</span></li>
+		<li>เลือกรายการ<span style="width:123px;background: url('css/images/btn-cdm-other.gif')">"ชำระเข้าบริษัทอื่น"</span></li>
+		<li>กดเลขบัญชีบริษัท <span style="width:73px;background: url('css/images/btn-cdm-account.gif')">"3333"</span></li>
+		<li>กดจำนวนเงินที่ต้องการเติมเริ่มตั้งแต่ 300-5,000 บาท<br>(ธนบัตร 50 บาท จะไม่สามารถใช้ได้)</li>
+		<li>กรุณาใส่ Customer No. <span style="width:128px;background: url('css/images/btn-cdm-number.gif')">"หมายเลขโทรศัพท์"</span></li>
+		<li>กรุณาใส่  Reference No. <span style="width:128px;background: url('css/images/btn-cdm-number.gif')">"หมายเลขโทรศัพท์"</span></li>
+		<li>นำธนบัตรที่ต้องการฝากใส่ลงในช่องใส่เงิน จากนั้นกด <span style="width:74px;background: url('css/images/btn-cdm-confirm.gif')">"ยืนยัน"</span>
+		<br><div style="color:#614e48;margin-top:-3px;">กรุณารอสักครู่เครื่องต้องการตรวจนับธนบัตร</div></li>
+		<li>ยืนยันยอดธนบัตร ยืนยันการทำรายการ</li>
+		<li>ทำรายการเรียนร้อย รับ slip</li>
+	</ul>
 </div>
 </div>
 </div>
